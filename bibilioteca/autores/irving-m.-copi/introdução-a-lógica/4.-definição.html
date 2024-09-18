@@ -1,0 +1,589 @@
+<!DOCTYPE html> <html><head>
+		<title>4. Definição</title>
+		<base href="..\..\..\../">
+		<meta id="root-path" root-path="..\..\..\../">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes, minimum-scale=1.0, maximum-scale=5.0">
+		<meta charset="UTF-8">
+		<meta name="description" content="Geral - 4. Definição">
+		<meta property="og:title" content="4. Definição">
+		<meta property="og:description" content="Geral - 4. Definição">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="bibilioteca/autores/irving-m.-copi/introdução-a-lógica/4.-definição.html">
+		<meta property="og:image" content="undefined">
+		<meta property="og:site_name" content="Geral">
+		<link rel="alternate" type="application/rss+xml" title="RSS Feed" href="lib/rss.xml"><script async="" id="webpage-script" src="lib/scripts/webpage.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script type="module" async="" id="graph-view-script" src="lib/scripts/graph-view.js"></script><script async="" id="graph-wasm-script" src="lib/scripts/graph-wasm.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="graph-render-worker-script" src="lib/scripts/graph-render-worker.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="tinycolor-script" src="lib/scripts/tinycolor.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="pixi-script" src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.4.0/pixi.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><script async="" id="minisearch-script" src="https://cdn.jsdelivr.net/npm/minisearch@6.3.0/dist/umd/index.min.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><link rel="icon" href="lib/media/favicon.png"><script async="" id="graph-data-script" src="lib/scripts/graph-data.js" onload="this.onload=null;this.setAttribute(&quot;loaded&quot;, &quot;true&quot;)"></script><style>body{--line-width:40em;--line-width-adaptive:40em;--file-line-width:40em;--sidebar-width:min(20em, 80vw);--collapse-arrow-size:11px;--tree-horizontal-spacing:0.6em;--tree-vertical-spacing:0.6em;--sidebar-margin:12px}.sidebar{height:100%;min-width:calc(var(--sidebar-width) + var(--divider-width-hover));max-width:calc(var(--sidebar-width) + var(--divider-width-hover));font-size:14px;z-index:10;position:relative;overflow:hidden;transition:min-width ease-in-out,max-width ease-in-out;transition-duration:.2s;contain:size}.sidebar-left{left:0}.sidebar-right{right:0}.sidebar.is-collapsed{min-width:0;max-width:0}body.floating-sidebars .sidebar{position:absolute}.sidebar-content{height:100%;min-width:calc(var(--sidebar-width) - var(--divider-width-hover));top:0;padding:var(--sidebar-margin);padding-top:4em;line-height:var(--line-height-tight);background-color:var(--background-secondary);transition:background-color,border-right,border-left,box-shadow;transition-duration:var(--color-fade-speed);transition-timing-function:ease-in-out;position:absolute;display:flex;flex-direction:column}.sidebar:not(.is-collapsed) .sidebar-content{min-width:calc(max(100%,var(--sidebar-width)) - 3px);max-width:calc(max(100%,var(--sidebar-width)) - 3px)}.sidebar-left .sidebar-content{left:0;border-top-right-radius:var(--radius-l);border-bottom-right-radius:var(--radius-l)}.sidebar-right .sidebar-content{right:0;border-top-left-radius:var(--radius-l);border-bottom-left-radius:var(--radius-l)}.sidebar:has(.sidebar-content:empty):has(.topbar-content:empty){display:none}.sidebar-topbar{height:2em;width:var(--sidebar-width);top:var(--sidebar-margin);padding-inline:var(--sidebar-margin);z-index:1;position:fixed;display:flex;align-items:center;transition:width ease-in-out;transition-duration:inherit}.sidebar.is-collapsed .sidebar-topbar{width:calc(2.3em + var(--sidebar-margin) * 2)}.sidebar .sidebar-topbar.is-collapsed{width:0}.sidebar-left .sidebar-topbar{left:0}.sidebar-right .sidebar-topbar{right:0}.topbar-content{overflow:hidden;overflow:clip;width:100%;height:100%;display:flex;align-items:center;transition:inherit}.sidebar.is-collapsed .topbar-content{width:0;transition:inherit}.clickable-icon.sidebar-collapse-icon{background-color:transparent;color:var(--icon-color-focused);padding:0!important;margin:0!important;height:100%!important;width:2.3em!important;margin-inline:0.14em!important;position:absolute}.sidebar-left .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);right:var(--sidebar-margin)}.sidebar-right .clickable-icon.sidebar-collapse-icon{transform:rotateY(180deg);left:var(--sidebar-margin)}.clickable-icon.sidebar-collapse-icon svg.svg-icon{width:100%;height:100%}.sidebar-section-header{margin:0 0 1em 0;text-transform:uppercase;letter-spacing:.06em;font-weight:600}body{transition:background-color var(--color-fade-speed) ease-in-out}.webpage-container{display:flex;flex-direction:row;height:100%;width:100%;align-items:stretch;justify-content:center}.document-container{opacity:1;flex-basis:100%;max-width:100%;width:100%;height:100%;display:flex;flex-direction:column;align-items:center;transition:opacity .2s ease-in-out;contain:inline-size}.hide{opacity:0;transition:opacity .2s ease-in-out}.document-container>.markdown-preview-view{margin:var(--sidebar-margin);margin-bottom:0;width:100%;width:-webkit-fill-available;width:-moz-available;width:fill-available;background-color:var(--background-primary);transition:background-color var(--color-fade-speed) ease-in-out;border-top-right-radius:var(--window-radius,var(--radius-m));border-top-left-radius:var(--window-radius,var(--radius-m));overflow-x:hidden!important;overflow-y:auto!important;display:flex!important;flex-direction:column!important;align-items:center!important;contain:inline-size}.document-container>.markdown-preview-view>.markdown-preview-sizer{padding-bottom:80vh!important;width:100%!important;max-width:var(--line-width)!important;flex-basis:var(--line-width)!important;transition:background-color var(--color-fade-speed) ease-in-out;contain:inline-size}.markdown-rendered img:not([width]),.view-content img:not([width]){max-width:100%;outline:0}.document-container>.view-content.embed{display:flex;padding:1em;height:100%;width:100%;align-items:center;justify-content:center}.document-container>.view-content.embed>*{max-width:100%;max-height:100%;object-fit:contain}:has(> :is(.math,table)){overflow-x:auto!important}.document-container>.view-content{overflow-x:auto;contain:content;padding:0;margin:0;height:100%}.scroll-highlight{position:absolute;width:100%;height:100%;pointer-events:none;z-index:1000;background-color:hsla(var(--color-accent-hsl),.25);opacity:0;padding:1em;inset:50%;translate:-50% -50%;border-radius:var(--radius-s)}</style><script defer="">async function loadIncludes(){if("file:"!=location.protocol){let e=document.querySelectorAll("include");for(let t=0;t<e.length;t++){let o=e[t],l=o.getAttribute("src");try{const e=await fetch(l);if(!e.ok){console.log("Could not include file: "+l),o?.remove();continue}let t=await e.text(),n=document.createRange().createContextualFragment(t),i=Array.from(n.children);for(let e of i)e.classList.add("hide"),e.style.transition="opacity 0.5s ease-in-out",setTimeout((()=>{e.classList.remove("hide")}),10);o.before(n),o.remove(),console.log("Included file: "+l)}catch(e){o?.remove(),console.log("Could not include file: "+l,e);continue}}}else{if(document.querySelectorAll("include").length>0){var e=document.createElement("div");e.id="error",e.textContent="Web server exports must be hosted on an http / web server to be viewed correctly.",e.style.position="fixed",e.style.top="50%",e.style.left="50%",e.style.transform="translate(-50%, -50%)",e.style.fontSize="1.5em",e.style.fontWeight="bold",e.style.textAlign="center",document.body.appendChild(e),document.querySelector(".document-container")?.classList.remove("hide")}}}document.addEventListener("DOMContentLoaded",(()=>{loadIncludes()}));let isFileProtocol="file:"==location.protocol;function waitLoadScripts(e,t){let o=e.map((e=>document.getElementById(e+"-script"))),l=0;!function e(){let n=o[l];l++,n&&"true"!=n.getAttribute("loaded")||l<o.length&&e(),l<o.length?n.addEventListener("load",e):t()}()}</script><link rel="stylesheet" href="lib/styles/obsidian.css"><link rel="preload" href="lib/styles/global-variable-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/global-variable-styles.css"></noscript><link rel="preload" href="lib/styles/main-styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="lib/styles/main-styles.css"></noscript></head><body class="publish css-settings-manager theme-dark show-inline-title show-ribbon"><script defer="">let theme=localStorage.getItem("theme")||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light");"dark"==theme?(document.body.classList.add("theme-dark"),document.body.classList.remove("theme-light")):(document.body.classList.add("theme-light"),document.body.classList.remove("theme-dark")),window.innerWidth<480?document.body.classList.add("is-phone"):window.innerWidth<768?document.body.classList.add("is-tablet"):window.innerWidth<1024?document.body.classList.add("is-small-screen"):document.body.classList.add("is-large-screen")</script><div class="webpage-container workspace"><div class="sidebar-left sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"><label class="theme-toggle-container" for="theme_toggle"><input class="theme-toggle-input" type="checkbox" id="theme_toggle"><div class="toggle-background"></div></label></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="search-input-container"><input enterkeyhint="search" type="search" spellcheck="false" placeholder="Search..."><div class="search-input-clear-button" aria-label="Clear search"></div></div><include src="lib/html/file-tree.html"></include></div><script defer="">let ls = document.querySelector(".sidebar-left"); ls.classList.add("is-collapsed"); if (window.innerWidth > 768) ls.classList.remove("is-collapsed"); ls.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-left-width"));</script></div><div class="document-container markdown-reading-view hide"><div class="markdown-preview-view markdown-rendered allow-fold-headings allow-fold-lists is-readable-line-width"><style id="MJX-CHTML-styles"></style><div class="markdown-preview-sizer markdown-preview-section"><h1 class="page-title heading inline-title" id="4. Definição"><ol start="4">
+<li dir="auto">Definição</li>
+</ol></h1><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#definição</a> <a href="?query=tag:prop%C3%B3sitos_de_defini%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#propósitos_de_definição</a> <a href="?query=tag:linguagem" class="tag" target="_blank" rel="noopener">#linguagem</a> </p></div><div class="heading-wrapper"><h4 data-heading="I. Cinco Propósitos de Definição" dir="auto" class="heading" id="I._Cinco_Propósitos_de_Definição"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>I. Cinco Propósitos de Definição</h4><div class="heading-children"><div><p dir="auto"><a href="?query=tag:prop%C3%B3sitos_de_defini%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#propósitos_de_definição</a> <a href="?query=tag:aumento_de_vocabulario" class="tag" target="_blank" rel="noopener">#aumento_de_vocabulario</a> <a href="?query=tag:elimina%C3%A7%C3%A3o_da_ambiguidade" class="tag" target="_blank" rel="noopener">#eliminação_da_ambiguidade</a> <a href="?query=tag:clareza_do_significado" class="tag" target="_blank" rel="noopener">#clareza_do_significado</a> <a href="?query=tag:explica%C3%A7%C3%A3o_te%C3%B3rica" class="tag" target="_blank" rel="noopener">#explicação_teórica</a></p></div><div><ol>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>Para Aumentar o Vocabulário</strong>:</p>
+<ul>
+<li data-line="2" dir="auto">A linguagem é uma ferramenta complexa que as pessoas aprendem a usar, muitas vezes, de forma informal, através da observação e imitação.</li>
+<li data-line="3" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Exemplos de aprendizagem informal incluem:
+<ul>
+<li data-line="4" dir="auto">Um rapaz aprende a dirigir observando seu pai.</li>
+<li data-line="5" dir="auto">Uma menina aprende a usar utensílios de cozinha ao passar tempo com sua mãe na cozinha.</li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><a href="?query=tag:aprendizado_informal" class="tag" target="_blank" rel="noopener">#aprendizado_informal</a> <a href="?query=tag:observa%C3%A7%C3%A3o_e_imita%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#observação_e_imitação</a> <a href="?query=tag:linguagem_como_ferramenta" class="tag" target="_blank" rel="noopener">#linguagem_como_ferramenta</a></li>
+<li data-line="7" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><mark>Há limites para a aprendizagem não-formal:</mark>
+<ul>
+<li data-line="8" dir="auto">Acidentes de trânsito crescentes requerem treinamento formal para motoristas.</li>
+<li data-line="9" dir="auto">Cursos de economia doméstica em escolas ajudam a complementar a aprendizagem informal.</li>
+<li data-line="10" dir="auto">Na linguagem, há momentos em que a observação e imitação não são suficientes; é necessária uma instrução formal, como definir termos.</li>
+</ul>
+</li>
+<li data-line="11" dir="auto"><mark>Definir um termo ajuda a expandir o vocabulário de quem aprende, sendo um método suplementar para o uso e compreensão corretos da linguagem.</mark></li>
+<li data-line="12" dir="auto"><a href="?query=tag:limites_da_aprendizagem_informal" class="tag" target="_blank" rel="noopener">#limites_da_aprendizagem_informal</a> <a href="?query=tag:instru%C3%A7%C3%A3o_formal" class="tag" target="_blank" rel="noopener">#instrução_formal</a> <a href="?query=tag:expans%C3%A3o_de_vocabulario" class="tag" target="_blank" rel="noopener">#expansão_de_vocabulario</a></li>
+</ul>
+</li>
+<li data-line="13" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>Para Eliminar a Ambiguidade</strong>:</p>
+<ul>
+<li data-line="15" dir="auto">Definições ajudam a esclarecer palavras com múltiplos significados ou sentidos.</li>
+<li data-line="16" dir="auto">Em contextos ambíguos, uma palavra pode ter mais de um significado, levando a equívocos ou discussões que são meramente verbais.</li>
+<li data-line="17" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Exemplo clássico de resolução de disputa verbal:
+<ul>
+<li data-line="18" dir="auto">William James explicou uma discussão sobre um homem e um esquilo se movendo ao redor de uma árvore.</li>
+<li data-line="19" dir="auto">A definição clara dos termos envolvidos resolveu o desacordo.</li>
+</ul>
+</li>
+<li data-line="20" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>A eliminação de ambiguidade é importante para:
+<ul>
+<li data-line="21" dir="auto"><mark>Expor falácias de equívoco.</mark></li>
+<li data-line="22" dir="auto">Resolver disputas verbais ao explicar diferentes significados de palavras ambíguas.</li>
+</ul>
+</li>
+<li data-line="23" dir="auto"><a href="?query=tag:elimina%C3%A7%C3%A3o_da_ambiguidade" class="tag" target="_blank" rel="noopener">#eliminação_da_ambiguidade</a> <a href="?query=tag:resolu%C3%A7%C3%A3o_de_disputas" class="tag" target="_blank" rel="noopener">#resolução_de_disputas</a> <a href="?query=tag:defini%C3%A7%C3%A3o_de_termos" class="tag" target="_blank" rel="noopener">#definição_de_termos</a></li>
+</ul>
+</li>
+<li data-line="24" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>Para Aclarar o Significado</strong>:</p>
+<ul>
+<li data-line="26" dir="auto"><mark>Definir um termo é útil quando se deseja usá-lo, mas seus limites de aplicabilidade não estão claros.</mark></li>
+<li data-line="27" dir="auto">Diferente de ensinar um termo desconhecido, o objetivo aqui é esclarecer um termo já conhecido, mas vago.</li>
+<li data-line="28" dir="auto">Termos vagos podem ter "casos limítrofes" onde é difícil determinar sua aplicabilidade.</li>
+<li data-line="29" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Exemplos de termos vagos incluem:
+<ul>
+<li data-line="30" dir="auto"><mark>"Vivo" (em relação a vírus).</mark></li>
+<li data-line="31" dir="auto"><mark>"Democracia" (em relação a governos).</mark></li>
+</ul>
+</li>
+<li data-line="32" dir="auto">A definição ajuda a eliminar a vagueza, permitindo decidir sobre a aplicabilidade do termo em situações específicas.</li>
+<li data-line="33" dir="auto"><a href="?query=tag:clareza_do_significado" class="tag" target="_blank" rel="noopener">#clareza_do_significado</a> <a href="?query=tag:termos_vagos" class="tag" target="_blank" rel="noopener">#termos_vagos</a> <a href="?query=tag:decis%C3%A3o_sobre_aplicabilidade" class="tag" target="_blank" rel="noopener">#decisão_sobre_aplicabilidade</a></li>
+</ul>
+</li>
+<li data-line="34" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>
+<p><strong>Para Explicar Teoricamente</strong>:</p>
+<ul>
+<li data-line="36" dir="auto">Definir um termo pode servir para formular uma caracterização teoricamente adequada ou cientificamente útil.</li>
+<li data-line="37" dir="auto">Exemplo: A definição de "força" na física como o produto da massa pela aceleração.</li>
+<li data-line="38" dir="auto">Este tipo de definição não visa aumentar o vocabulário ou eliminar ambiguidade, mas incorporar princípios científicos no significado do termo.</li>
+<li data-line="39" dir="auto">Definições teóricas ajudam a construir conhecimento científico e conceitos precisos.</li>
+<li data-line="40" dir="auto"><a href="?query=tag:explica%C3%A7%C3%A3o_te%C3%B3rica" class="tag" target="_blank" rel="noopener">#explicação_teórica</a> <a href="?query=tag:caracteriza%C3%A7%C3%A3o_cient%C3%ADfica" class="tag" target="_blank" rel="noopener">#caracterização_científica</a> <a href="?query=tag:constru%C3%A7%C3%A3o_do_conhecimento" class="tag" target="_blank" rel="noopener">#construção_do_conhecimento</a></li>
+</ul>
+</li>
+</ol></div></div></div><div class="heading-wrapper"><h3 data-heading="Considerações Finais" dir="auto" class="heading" id="Considerações_Finais"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Considerações Finais</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%A3o_de_termos" class="tag" target="_blank" rel="noopener">#definição_de_termos</a> <a href="?query=tag:import%C3%A2ncia_das_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#importância_das_definições</a> <a href="?query=tag:uso_da_linguagem" class="tag" target="_blank" rel="noopener">#uso_da_linguagem</a></p></div><div><ul>
+<li data-line="0" dir="auto">As definições são essenciais para a comunicação eficaz e compreensão clara.</li>
+<li data-line="1" dir="auto">Elas desempenham diferentes papéis, dependendo do contexto e da necessidade de quem aprende ou utiliza os termos.</li>
+<li data-line="2" dir="auto">Compreender os propósitos e métodos de definição é fundamental para aprimorar o uso da linguagem e o pensamento crítico.</li>
+<li data-line="3" dir="auto"><a href="?query=tag:comunica%C3%A7%C3%A3o_eficaz" class="tag" target="_blank" rel="noopener">#comunicação_eficaz</a> <a href="?query=tag:papel_das_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#papel_das_definições</a> <a href="?query=tag:pensamento_cr%C3%ADtico" class="tag" target="_blank" rel="noopener">#pensamento_crítico</a></li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Disputas Verbais e Definição" dir="auto" class="heading" id="Disputas_Verbais_e_Definição"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Disputas Verbais e Definição</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:disputas_verbais" class="tag" target="_blank" rel="noopener">#disputas_verbais</a> <a href="?query=tag:defini%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#definição</a> <a href="?query=tag:diverg%C3%AAncias" class="tag" target="_blank" rel="noopener">#divergências</a> <a href="?query=tag:quest%C3%B5es_pol%C3%ADticas" class="tag" target="_blank" rel="noopener">#questões_políticas</a> <a href="?query=tag:significado_emotivo" class="tag" target="_blank" rel="noopener">#significado_emotivo</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Disputas Verbais e Definição</strong>:
+<ul>
+<li data-line="2" dir="auto"><mark>Algumas disputas são meramente verbais, resultando da confusão de sentidos diferentes de um termo ambíguo.</mark></li>
+<li data-line="3" dir="auto">Exemplo: Divergências entre os Estados Unidos e a União Soviética após a Segunda Guerra Mundial sobre a definição de "democrático".</li>
+<li data-line="4" dir="auto"><mark>Críticos sugeriram que tais disputas poderiam ser resolvidas com uma definição mais precisa do termo, mas isso é uma visão superficial.</mark></li>
+<li data-line="5" dir="auto">Divergências reais entre as nações envolviam questões políticas e morais profundas, não apenas definicionais.</li>
+<li data-line="6" dir="auto">O acordo sobre o significado emotivo de um termo não resolve a divergência real sobre questões concretas.</li>
+<li data-line="7" dir="auto"><a href="?query=tag:defini%C3%A7%C3%B5es_amb%C3%ADguas" class="tag" target="_blank" rel="noopener">#definições_ambíguas</a> <a href="?query=tag:quest%C3%B5es_reais" class="tag" target="_blank" rel="noopener">#questões_reais</a> <a href="?query=tag:significado_emotivo" class="tag" target="_blank" rel="noopener">#significado_emotivo</a> <a href="?query=tag:diverg%C3%AAncias_profundas" class="tag" target="_blank" rel="noopener">#divergências_profundas</a></li>
+</ul>
+</li>
+<li data-line="8" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Espécies de Disputas</strong>:
+<ul>
+<li data-line="10" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Disputa Obviamente Genuína</strong>:
+<ul>
+<li data-line="12" dir="auto">Caracterizada por uma discordância clara sobre fatos ou atitudes.</li>
+<li data-line="13" dir="auto">Pode envolver desacordo sobre a grafia, pronúncia ou uso de uma palavra, ou sobre atitudes de uma pessoa.</li>
+<li data-line="14" dir="auto">Envolve discordância em convicções.</li>
+<li data-line="15" dir="auto"><a href="?query=tag:disputa_genu%C3%ADna" class="tag" target="_blank" rel="noopener">#disputa_genuína</a> <a href="?query=tag:discord%C3%A2ncia_clara" class="tag" target="_blank" rel="noopener">#discordância_clara</a> <a href="?query=tag:fatos_atitudes" class="tag" target="_blank" rel="noopener">#fatos_atitudes</a></li>
+</ul>
+</li>
+<li data-line="16" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Disputa Meramente Verbal</strong>:
+<ul>
+<li data-line="18" dir="auto">Ocorre quando um termo ambíguo oculta a ausência de desacordo real.</li>
+<li data-line="19" dir="auto">Resolvida revelando a ambiguidade e mostrando que diferentes proposições estão sendo sustentadas.</li>
+<li data-line="20" dir="auto"><a href="?query=tag:disputa_meramente_verbal" class="tag" target="_blank" rel="noopener">#disputa_meramente_verbal</a> <a href="?query=tag:ambiguidade" class="tag" target="_blank" rel="noopener">#ambiguidade</a> <a href="?query=tag:aus%C3%AAncia_de_desacordo" class="tag" target="_blank" rel="noopener">#ausência_de_desacordo</a></li>
+</ul>
+</li>
+<li data-line="21" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Disputa Aparentemente Verbal, Mas Genuína</strong>:
+<ul>
+<li data-line="23" dir="auto">A ambiguidade está presente, mas a disputa revela uma divergência autêntica de atitudes.</li>
+<li data-line="24" dir="auto">Não se resolve apenas com a clarificação da ambiguidade.</li>
+<li data-line="25" dir="auto"><a href="?query=tag:disputa_aparentemente_verbal" class="tag" target="_blank" rel="noopener">#disputa_aparentemente_verbal</a> <a href="?query=tag:diverg%C3%AAncia_de_atitudes" class="tag" target="_blank" rel="noopener">#divergência_de_atitudes</a> <a href="?query=tag:resolu%C3%A7%C3%A3o_amb%C3%ADgua" class="tag" target="_blank" rel="noopener">#resolução_ambígua</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="26" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Resumo das Três Espécies de Disputas</strong>:
+<ul>
+<li data-line="28" dir="auto"><strong>Disputa Obviamente Genuína</strong>: Sem ambiguidade, discordância em convicção ou crença.</li>
+<li data-line="29" dir="auto"><strong>Disputa Meramente Verbal</strong>: Presença de ambiguidade, sem desacordo real.</li>
+<li data-line="30" dir="auto"><strong>Disputa Aparentemente Verbal, Mas Genuína</strong>: Ambiguidade presente, divergência real de atitudes.</li>
+<li data-line="31" dir="auto"><a href="?query=tag:resumo_das_disputas" class="tag" target="_blank" rel="noopener">#resumo_das_disputas</a> <a href="?query=tag:tipos_de_disputa" class="tag" target="_blank" rel="noopener">#tipos_de_disputa</a> <a href="?query=tag:genu%C3%ADna_verbal" class="tag" target="_blank" rel="noopener">#genuína_verbal</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Cinco Tipos de Definição" dir="auto" class="heading" id="Cinco_Tipos_de_Definição"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Cinco Tipos de Definição</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#definições</a> <a href="?query=tag:tipos_de_defini%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#tipos_de_definição</a> <a href="?query=tag:s%C3%ADmbolos" class="tag" target="_blank" rel="noopener">#símbolos</a> <a href="?query=tag:linguagem" class="tag" target="_blank" rel="noopener">#linguagem</a> <a href="?query=tag:conceitos" class="tag" target="_blank" rel="noopener">#conceitos</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Símbolos e Definições</strong>:
+<ul>
+<li data-line="2" dir="auto"><mark>Definições são sempre relacionadas a símbolos, pois apenas símbolos têm significados que precisam ser explicados.</mark></li>
+<li data-line="3" dir="auto">Não podemos definir objetos em si, como uma cadeira, pois não são símbolos com significados que necessitem de explicação.</li>
+<li data-line="4" dir="auto"><a href="?query=tag:s%C3%ADmbolos" class="tag" target="_blank" rel="noopener">#símbolos</a> <a href="?query=tag:significado_dos_s%C3%ADmbolos" class="tag" target="_blank" rel="noopener">#significado_dos_símbolos</a> <a href="?query=tag:defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#definições</a> <a href="?query=tag:objetos" class="tag" target="_blank" rel="noopener">#objetos</a></li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Modos de Expressão das Definições</strong>:
+<ul>
+<li data-line="7" dir="auto">As definições podem ser expressas de duas formas: <mark>falando sobre o símbolo definido ou falando sobre aquilo a que o símbolo se refere.</mark></li>
+<li data-line="8" dir="auto">Exemplo: “A palavra 'triângulo' designa uma figura plana limitada por três linhas retas” ou “Um triângulo é uma figura plana limitada por três linhas retas”.</li>
+<li data-line="9" dir="auto"><a href="?query=tag:express%C3%A3o_das_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#expressão_das_definições</a> <a href="?query=tag:s%C3%ADmbolos" class="tag" target="_blank" rel="noopener">#símbolos</a> <a href="?query=tag:tri%C3%A2ngulo" class="tag" target="_blank" rel="noopener">#triângulo</a> <a href="?query=tag:linguagem" class="tag" target="_blank" rel="noopener">#linguagem</a></li>
+</ul>
+</li>
+<li data-line="10" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definiendum e Definiens</strong>:
+<ul>
+<li data-line="12" dir="auto"><mark>O símbolo a ser definido é chamado de <em>definiendum</em>, e o símbolo ou grupo de símbolos que explicam o significado do <em>definiendum</em> são chamados de <em>definiens</em>.</mark></li>
+<li data-line="13" dir="auto">Exemplo: na definição “Um triângulo é uma figura plana limitada por três linhas retas”, "triângulo" é o <em>definiendum</em> e “figura plana limitada por três linhas retas” é o <em>definiens</em>.</li>
+<li data-line="14" dir="auto"><a href="?query=tag:definiendum" class="tag" target="_blank" rel="noopener">#definiendum</a> <a href="?query=tag:definiens" class="tag" target="_blank" rel="noopener">#definiens</a> <a href="?query=tag:terminologia" class="tag" target="_blank" rel="noopener">#terminologia</a> <a href="?query=tag:defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#definições</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Definições Estipulativas" dir="auto" class="heading" id="Definições_Estipulativas"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Definições Estipulativas</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%B5es_estipulativas" class="tag" target="_blank" rel="noopener">#definições_estipulativas</a> <a href="?query=tag:novos_termos" class="tag" target="_blank" rel="noopener">#novos_termos</a> <a href="?query=tag:nomea%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#nomeações</a> <a href="?query=tag:ci%C3%AAncia" class="tag" target="_blank" rel="noopener">#ciência</a> <a href="?query=tag:linguagem" class="tag" target="_blank" rel="noopener">#linguagem</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Introdução de Novos Termos</strong>:
+<ul>
+<li data-line="2" dir="auto"><mark>Definições estipulativas são usadas para atribuir significados a termos novos.</mark></li>
+<li data-line="3" dir="auto">O criador do termo tem a liberdade de definir seu significado, sendo um problema de escolha.</li>
+<li data-line="4" dir="auto"><a href="?query=tag:introdu%C3%A7%C3%A3o_de_termos" class="tag" target="_blank" rel="noopener">#introdução_de_termos</a> <a href="?query=tag:novos_significados" class="tag" target="_blank" rel="noopener">#novos_significados</a> <a href="?query=tag:defini%C3%A7%C3%B5es_estipulativas" class="tag" target="_blank" rel="noopener">#definições_estipulativas</a></li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Contexto de Uso</strong>:
+<ul>
+<li data-line="7" dir="auto">Um termo não precisa ser totalmente novo em som ou aparência, mas deve ser novo no contexto em que está sendo usado.</li>
+<li data-line="8" dir="auto">Novos termos podem surgir em diversas áreas, como a ciência, onde a economia de espaço e a redução de complexidade são vantajosas.</li>
+<li data-line="9" dir="auto"><a href="?query=tag:contexto_de_uso" class="tag" target="_blank" rel="noopener">#contexto_de_uso</a> <a href="?query=tag:ci%C3%AAncia" class="tag" target="_blank" rel="noopener">#ciência</a> <a href="?query=tag:redu%C3%A7%C3%A3o_de_complexidade" class="tag" target="_blank" rel="noopener">#redução_de_complexidade</a> <a href="?query=tag:defini%C3%A7%C3%B5es_estipulativas" class="tag" target="_blank" rel="noopener">#definições_estipulativas</a></li>
+</ul>
+</li>
+<li data-line="10" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Vantagens das Definições Estipulativas</strong>:
+<ul>
+<li data-line="12" dir="auto">A introdução de novos termos pode reduzir associações emotivas indesejadas com termos conhecidos.</li>
+<li data-line="13" dir="auto">Exemplo: <mark>"fator g" na psicologia, que visa evitar associações emotivas com a palavra “inteligência”.</mark></li>
+<li data-line="14" dir="auto"><a href="?query=tag:vantagens_das_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#vantagens_das_definições</a> <a href="?query=tag:associa%C3%A7%C3%B5es_emotivas" class="tag" target="_blank" rel="noopener">#associações_emotivas</a> <a href="?query=tag:psicologia" class="tag" target="_blank" rel="noopener">#psicologia</a> <a href="?query=tag:fator_g" class="tag" target="_blank" rel="noopener">#fator_g</a></li>
+</ul>
+</li>
+<li data-line="15" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Características das Definições Estipulativas</strong>:
+<ul>
+<li data-line="17" dir="auto"><mark>Definições estipulativas não podem ser consideradas verdadeiras ou falsas, pois são propostas de uso.</mark></li>
+<li data-line="18" dir="auto">Sua avaliação se baseia em critérios como clareza, utilidade e adequação ao objetivo.</li>
+<li data-line="19" dir="auto"><a href="?query=tag:caracter%C3%ADsticas_das_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#características_das_definições</a> <a href="?query=tag:propostas_de_uso" class="tag" target="_blank" rel="noopener">#propostas_de_uso</a> <a href="?query=tag:avalia%C3%A7%C3%A3o_de_termos" class="tag" target="_blank" rel="noopener">#avaliação_de_termos</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Definições Lexicográficas" dir="auto" class="heading" id="Definições_Lexicográficas"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Definições Lexicográficas</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%B5es_lexicogr%C3%A1ficas" class="tag" target="_blank" rel="noopener">#definições_lexicográficas</a> <a href="?query=tag:vocabul%C3%A1rio" class="tag" target="_blank" rel="noopener">#vocabulário</a> <a href="?query=tag:significado" class="tag" target="_blank" rel="noopener">#significado</a> <a href="?query=tag:uso_estabelecido" class="tag" target="_blank" rel="noopener">#uso_estabelecido</a> <a href="?query=tag:lingu%C3%ADstica" class="tag" target="_blank" rel="noopener">#linguística</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Eliminação de Ambiguidades</strong>:
+<ul>
+<li data-line="2" dir="auto">Definições lexicográficas são usadas para esclarecer ambiguidades ou expandir o vocabulário.</li>
+<li data-line="3" dir="auto"><mark>Diferente das definições estipulativas, essas definições informam um significado que já existe.</mark></li>
+<li data-line="4" dir="auto"><a href="?query=tag:elimina%C3%A7%C3%A3o_de_ambiguidades" class="tag" target="_blank" rel="noopener">#eliminação_de_ambiguidades</a> <a href="?query=tag:expans%C3%A3o_de_vocabul%C3%A1rio" class="tag" target="_blank" rel="noopener">#expansão_de_vocabulário</a> <a href="?query=tag:defini%C3%A7%C3%B5es_lexicogr%C3%A1ficas" class="tag" target="_blank" rel="noopener">#definições_lexicográficas</a></li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Verdade e Falsidade</strong>:
+<ul>
+<li data-line="7" dir="auto">Uma definição lexicográfica pode ser verdadeira ou falsa, dependendo se representa corretamente o significado do termo no uso corrente.</li>
+<li data-line="8" dir="auto">Exemplo de uma definição verdadeira: "montanha" como uma grande massa de terra que se eleva acima da região circundante.</li>
+<li data-line="9" dir="auto"><a href="?query=tag:verdade_falsidade" class="tag" target="_blank" rel="noopener">#verdade_falsidade</a> <a href="?query=tag:uso_corrente" class="tag" target="_blank" rel="noopener">#uso_corrente</a> <a href="?query=tag:defini%C3%A7%C3%B5es_lexicogr%C3%A1ficas" class="tag" target="_blank" rel="noopener">#definições_lexicográficas</a></li>
+</ul>
+</li>
+<li data-line="10" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Existência do Definiendum</strong>:
+<ul>
+<li data-line="12" dir="auto"><mark>A veracidade de uma definição lexicográfica não depende da existência real do objeto referido pelo definiendum.</mark></li>
+<li data-line="13" dir="auto"><mark>Exemplo: a definição de "unicórnio" é verdadeira no sentido lexicográfico, mesmo que o animal não exista.</mark></li>
+<li data-line="14" dir="auto"><a href="?query=tag:exist%C3%AAncia_do_definiendum" class="tag" target="_blank" rel="noopener">#existência_do_definiendum</a> <a href="?query=tag:defini%C3%A7%C3%B5es_verdadeiras" class="tag" target="_blank" rel="noopener">#definições_verdadeiras</a> <a href="?query=tag:unic%C3%B3rnio" class="tag" target="_blank" rel="noopener">#unicórnio</a></li>
+</ul>
+</li>
+<li data-line="15" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Variabilidade do Uso das Palavras</strong>:
+<ul>
+<li data-line="17" dir="auto">O uso de palavras pode variar, sendo por erro ou de forma heterodoxa, influenciando as definições lexicográficas.</li>
+<li data-line="18" dir="auto">Uma definição que ignora um uso significativo de uma palavra pode ser inadequada.</li>
+<li data-line="19" dir="auto"><a href="?query=tag:variabilidade_das_palavras" class="tag" target="_blank" rel="noopener">#variabilidade_das_palavras</a> <a href="?query=tag:erros_de_uso" class="tag" target="_blank" rel="noopener">#erros_de_uso</a> <a href="?query=tag:defini%C3%A7%C3%B5es_inadequadas" class="tag" target="_blank" rel="noopener">#definições_inadequadas</a> <a href="?query=tag:linguagem_corrente" class="tag" target="_blank" rel="noopener">#linguagem_corrente</a></li>
+</ul>
+</li>
+<li data-line="20" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definições Estatísticas</strong>:
+<ul>
+<li data-line="22" dir="auto">Definições lexicográficas ideais seriam estatísticas, refletindo a variação do uso das palavras em diferentes contextos e por diferentes grupos.</li>
+<li data-line="23" dir="auto"><mark>Dicionários se aproximam desse ideal ao indicar significados arcaicos, obsoletos, familiares, etc.</mark></li>
+<li data-line="24" dir="auto"><a href="?query=tag:defini%C3%A7%C3%B5es_estat%C3%ADsticas" class="tag" target="_blank" rel="noopener">#definições_estatísticas</a> <a href="?query=tag:varia%C3%A7%C3%A3o_de_uso" class="tag" target="_blank" rel="noopener">#variação_de_uso</a> <a href="?query=tag:dicion%C3%A1rios" class="tag" target="_blank" rel="noopener">#dicionários</a> <a href="?query=tag:significados_arcaicos" class="tag" target="_blank" rel="noopener">#significados_arcaicos</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Definições Aclaradoras" dir="auto" class="heading" id="Definições_Aclaradoras"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Definições Aclaradoras</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%B5es_aclaradoras" class="tag" target="_blank" rel="noopener">#definições_aclaradoras</a> <a href="?query=tag:vagueza_termos" class="tag" target="_blank" rel="noopener">#vagueza_termos</a> <a href="?query=tag:uso_estabelecido" class="tag" target="_blank" rel="noopener">#uso_estabelecido</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Natureza das Definições Aclaradoras</strong>:
+<ul>
+<li data-line="2" dir="auto"><mark>As definições aclaradoras visam esclarecer o uso de termos que possuem um caráter vago.</mark></li>
+<li data-line="3" dir="auto">Um termo é considerado vago quando gera casos limítrofes, impossibilitando uma decisão clara sobre sua aplicação.</li>
+<li data-line="4" dir="auto">A definição aclaradora deve ir além do uso corrente para decidir esses casos, mas não pode se distanciar completamente do uso estabelecido.</li>
+<li data-line="5" dir="auto"><a href="?query=tag:natureza_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#natureza_definições</a> <a href="?query=tag:esclarecimento_de_termos" class="tag" target="_blank" rel="noopener">#esclarecimento_de_termos</a> <a href="?query=tag:car%C3%A1ter_vago" class="tag" target="_blank" rel="noopener">#caráter_vago</a></li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Diferença entre Definições Aclaradoras e Outras Definições</strong>:
+<ul>
+<li data-line="8" dir="auto">Diferente das definições estipulativas, que introduzem um novo termo com um significado próprio, as definições aclaradoras aplicam-se a termos já existentes, porém vagos.</li>
+<li data-line="9" dir="auto">O autor de uma definição aclaradora não tem liberdade total para definir o termo, devendo manter-se alinhado ao uso estabelecido até certo ponto.</li>
+<li data-line="10" dir="auto">No entanto, para reduzir a vagueza do termo, a definição aclaradora deve preencher lacunas ou resolver conflitos no uso estabelecido, aproximando-se da estipulação.</li>
+<li data-line="11" dir="auto"><a href="?query=tag:diferen%C3%A7as_entre_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#diferenças_entre_definições</a> <a href="?query=tag:defini%C3%A7%C3%A3o_estipulativa" class="tag" target="_blank" rel="noopener">#definição_estipulativa</a> <a href="?query=tag:uso_estabelecido" class="tag" target="_blank" rel="noopener">#uso_estabelecido</a></li>
+</ul>
+</li>
+<li data-line="12" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Aplicação das Definições Aclaradoras em Contextos Legais</strong>:
+<ul>
+<li data-line="14" dir="auto"><mark>Definições aclaradoras são comuns em decisões jurídicas, onde certos termos precisam ser esclarecidos para incluir ou excluir casos específicos.</mark></li>
+<li data-line="15" dir="auto"><mark>Juristas usam argumentos para justificar suas definições aclaradoras, sugerindo que não consideram essas definições como meras estipulações.</mark></li>
+<li data-line="16" dir="auto">As definições aclaradoras são guiadas pelas intenções dos legisladores e pelo interesse público.</li>
+<li data-line="17" dir="auto"><a href="?query=tag:contextos_legais" class="tag" target="_blank" rel="noopener">#contextos_legais</a> <a href="?query=tag:defini%C3%A7%C3%A3o_jur%C3%ADdica" class="tag" target="_blank" rel="noopener">#definição_jurídica</a> <a href="?query=tag:inten%C3%A7%C3%A3o_legislativa" class="tag" target="_blank" rel="noopener">#intenção_legislativa</a></li>
+</ul>
+</li>
+<li data-line="18" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Critérios de Avaliação para Definições Aclaradoras</strong>:
+<ul>
+<li data-line="20" dir="auto">Os termos “verdadeiro” e “falso” aplicam-se parcialmente às definições aclaradoras, dependendo de sua conformidade com o uso estabelecido.</li>
+<li data-line="21" dir="auto">Quando uma definição aclaradora ultrapassa o uso estabelecido, os critérios de verdade ou falsidade não são mais aplicáveis; em vez disso, avalia-se sua conveniência ou sabedoria.</li>
+<li data-line="22" dir="auto"><a href="?query=tag:crit%C3%A9rios_de_avalia%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#critérios_de_avaliação</a> <a href="?query=tag:conformidade_com_uso" class="tag" target="_blank" rel="noopener">#conformidade_com_uso</a> <a href="?query=tag:conveni%C3%AAncia_sabedoria" class="tag" target="_blank" rel="noopener">#conveniência_sabedoria</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Definições Teóricas" dir="auto" class="heading" id="Definições_Teóricas"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Definições Teóricas</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%B5es_te%C3%B3ricas" class="tag" target="_blank" rel="noopener">#definições_teóricas</a> <a href="?query=tag:caracteriza%C3%A7%C3%A3o_te%C3%B3rica" class="tag" target="_blank" rel="noopener">#caracterização_teórica</a> <a href="?query=tag:disputas_sobre_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#disputas_sobre_definições</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definições Teóricas e Disputas</strong>:
+<ul>
+<li data-line="2" dir="auto">Definições teóricas buscam formular uma caracterização teoricamente adequada dos objetos a que se aplicam.</li>
+<li data-line="3" dir="auto">Propor uma definição teórica é o mesmo que propor uma teoria, e como teorias são discutíveis, as definições também podem ser objeto de disputa.</li>
+<li data-line="4" dir="auto">Mudanças nas definições teóricas ocorrem à medida que nosso conhecimento teórico se expande.</li>
+<li data-line="5" dir="auto"><a href="?query=tag:caracteriza%C3%A7%C3%A3o_te%C3%B3rica" class="tag" target="_blank" rel="noopener">#caracterização_teórica</a> <a href="?query=tag:disputas_te%C3%B3ricas" class="tag" target="_blank" rel="noopener">#disputas_teóricas</a> <a href="?query=tag:conhecimento_em_evolu%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#conhecimento_em_evolução</a></li>
+</ul>
+</li>
+<li data-line="6" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Exemplos de Definições Teóricas em Ciência</strong>:
+<ul>
+<li data-line="8" dir="auto">A definição de "calor" mudou ao longo do tempo: de um fluido sutil e imponderável para uma forma de energia relacionada ao movimento das moléculas.</li>
+<li data-line="9" dir="auto">Essas mudanças refletem a aceitação de diferentes teorias em diferentes épocas.</li>
+<li data-line="10" dir="auto"><a href="?query=tag:exemplos_cient%C3%ADficos" class="tag" target="_blank" rel="noopener">#exemplos_científicos</a> <a href="?query=tag:defini%C3%A7%C3%A3o_de_calor" class="tag" target="_blank" rel="noopener">#definição_de_calor</a> <a href="?query=tag:evolu%C3%A7%C3%A3o_te%C3%B3rica" class="tag" target="_blank" rel="noopener">#evolução_teórica</a></li>
+</ul>
+</li>
+<li data-line="11" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definições Teóricas e Filosofia</strong>:
+<ul>
+<li data-line="13" dir="auto">As definições teóricas são importantes na filosofia, <mark>como demonstrado pelas definições buscadas por Sócrates em relação a termos como "justiça" e "virtude".</mark></li>
+<li data-line="14" dir="auto"><mark>Essas definições não são estipulativas nem lexicográficas, pois buscam uma compreensão teórica e não apenas o uso comum dos termos.</mark></li>
+<li data-line="15" dir="auto"><a href="?query=tag:filosofia_te%C3%B3rica" class="tag" target="_blank" rel="noopener">#filosofia_teórica</a> <a href="?query=tag:S%C3%B3crates" class="tag" target="_blank" rel="noopener">#Sócrates</a> <a href="?query=tag:defini%C3%A7%C3%A3o_de_virtude" class="tag" target="_blank" rel="noopener">#definição_de_virtude</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Definições Persuasivas" dir="auto" class="heading" id="Definições_Persuasivas"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Definições Persuasivas</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%B5es_persuasivas" class="tag" target="_blank" rel="noopener">#definições_persuasivas</a> <a href="?query=tag:influ%C3%AAncia_de_atitudes" class="tag" target="_blank" rel="noopener">#influência_de_atitudes</a> <a href="?query=tag:fun%C3%A7%C3%A3o_expressiva" class="tag" target="_blank" rel="noopener">#função_expressiva</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Objetivo das Definições Persuasivas</strong>:
+<ul>
+<li data-line="2" dir="auto"><mark>Definições persuasivas são destinadas a influenciar atitudes, tendo uma função expressiva.</mark></li>
+<li data-line="3" dir="auto"><mark>Diferem dos outros tipos de definições, pois seu propósito é mais retórico do que informativo.</mark></li>
+<li data-line="4" dir="auto"><a href="?query=tag:objetivo_persuasivo" class="tag" target="_blank" rel="noopener">#objetivo_persuasivo</a> <a href="?query=tag:influ%C3%AAncia_ret%C3%B3rica" class="tag" target="_blank" rel="noopener">#influência_retórica</a> <a href="?query=tag:fun%C3%A7%C3%A3o_expressiva" class="tag" target="_blank" rel="noopener">#função_expressiva</a></li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Interseção com Outros Tipos de Definições</strong>:
+<ul>
+<li data-line="7" dir="auto">Qualquer definição, independentemente de seu tipo original, pode se tornar persuasiva se for enunciada de maneira emotiva e com a intenção de influenciar.</li>
+<li data-line="8" dir="auto">As definições persuasivas, portanto, não são mutuamente exclusivas dos outros tipos, como estipulativas ou teóricas.</li>
+<li data-line="9" dir="auto"><a href="?query=tag:interse%C3%A7%C3%A3o_com_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#interseção_com_definições</a> <a href="?query=tag:linguagem_emotiva" class="tag" target="_blank" rel="noopener">#linguagem_emotiva</a> <a href="?query=tag:inten%C3%A7%C3%A3o_de_influenciar" class="tag" target="_blank" rel="noopener">#intenção_de_influenciar</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Relações Entre Propósitos e Tipos de Definições" dir="auto" class="heading" id="Relações_Entre_Propósitos_e_Tipos_de_Definições"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Relações Entre Propósitos e Tipos de Definições</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:prop%C3%B3sitos_das_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#propósitos_das_definições</a> <a href="?query=tag:tipos_de_defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#tipos_de_definições</a> <a href="?query=tag:vocabul%C3%A1rio" class="tag" target="_blank" rel="noopener">#vocabulário</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Correspondência entre Propósitos e Tipos de Definições</strong>:
+<ul>
+<li data-line="2" dir="auto"><mark>Definições estipulativas e lexicográficas aumentam o vocabulário e reduzem a ambiguidade, enquanto definem termos específicos.</mark></li>
+<li data-line="3" dir="auto">Definições aclaradoras reduzem a vagueza de termos, enquanto definições teóricas explicam conceitos de forma teoricamente robusta.</li>
+<li data-line="4" dir="auto">Todas essas definições podem, adicionalmente, influenciar atitudes, servindo como definições persuasivas quando formuladas de maneira adequada.</li>
+<li data-line="5" dir="auto"><a href="?query=tag:correspond%C3%AAncia_propositiva" class="tag" target="_blank" rel="noopener">#correspondência_propositiva</a> <a href="?query=tag:redu%C3%A7%C3%A3o_de_ambiguidade" class="tag" target="_blank" rel="noopener">#redução_de_ambiguidade</a> <a href="?query=tag:explica%C3%A7%C3%A3o_te%C3%B3rica" class="tag" target="_blank" rel="noopener">#explicação_teórica</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Varias Espécies de Significado" dir="auto" class="heading" id="Varias_Espécies_de_Significado"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Varias Espécies de Significado</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:significado" class="tag" target="_blank" rel="noopener">#significado</a> <a href="?query=tag:defini%C3%A7%C3%B5es" class="tag" target="_blank" rel="noopener">#definições</a> <a href="?query=tag:termos_gerais" class="tag" target="_blank" rel="noopener">#termos_gerais</a> <a href="?query=tag:extens%C3%A3o" class="tag" target="_blank" rel="noopener">#extensão</a> <a href="?query=tag:conota%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#conotação</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definição de Significado</strong>:
+<ul>
+<li data-line="2" dir="auto">O significado de um termo pode ser entendido de diferentes formas. A definição é uma explicação do significado de um termo.</li>
+<li data-line="3" dir="auto">Importância de se compreender os diferentes sentidos da palavra "significado".</li>
+<li data-line="4" dir="auto"><a href="?query=tag:defini%C3%A7%C3%A3o_de_significado" class="tag" target="_blank" rel="noopener">#definição_de_significado</a> <a href="?query=tag:explica%C3%A7%C3%A3o_do_termo" class="tag" target="_blank" rel="noopener">#explicação_do_termo</a></li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Significado Descritivo ou Literal</strong>:
+<ul>
+<li data-line="7" dir="auto"><mark>Refere-se ao sentido referencial de um termo, também chamado de significado extensivo ou denotativo.</mark></li>
+<li data-line="8" dir="auto">Um termo geral, como "planeta", é aplicável igualmente a vários objetos no mesmo sentido.</li>
+<li data-line="9" dir="auto">Por exemplo, a palavra "planeta" se aplica a Mercúrio, Vênus, Terra, Marte, etc.</li>
+<li data-line="10" dir="auto">A extensão ou denotação de um termo é a coleção ou classe de objetos a que o termo pode ser aplicado.</li>
+<li data-line="11" dir="auto"><a href="?query=tag:significado_descritivo" class="tag" target="_blank" rel="noopener">#significado_descritivo</a> <a href="?query=tag:significado_literal" class="tag" target="_blank" rel="noopener">#significado_literal</a> <a href="?query=tag:significado_extensivo_ou_denotativo" class="tag" target="_blank" rel="noopener">#significado_extensivo_ou_denotativo</a></li>
+</ul>
+</li>
+<li data-line="12" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Significado Referencial</strong>:
+<ul>
+<li data-line="14" dir="auto">Consiste na classe de objetos a que o termo pode ser aplicado.</li>
+<li data-line="15" dir="auto">Um termo genérico ou de classe denota os objetos aos quais pode ser corretamente aplicado.</li>
+<li data-line="16" dir="auto">A coleção desses objetos forma a extensão ou denotação do termo.</li>
+<li data-line="17" dir="auto"><a href="?query=tag:significado_referencial" class="tag" target="_blank" rel="noopener">#significado_referencial</a> <a href="?query=tag:classe_de_objetos" class="tag" target="_blank" rel="noopener">#classe_de_objetos</a> <a href="?query=tag:extens%C3%A3o" class="tag" target="_blank" rel="noopener">#extensão</a></li>
+</ul>
+</li>
+<li data-line="18" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Intensão ou Conotação</strong>:
+<ul>
+<li data-line="20" dir="auto">Referem-se às propriedades comuns e características que levam à aplicação de um termo a determinados objetos.</li>
+<li data-line="21" dir="auto">A intensão ou conotação de um termo "arranha-céu" consiste nas propriedades comuns a todos os edifícios que ultrapassam certa altura.</li>
+<li data-line="22" dir="auto">A extensão ou denotação desse termo inclui edifícios específicos como o Empire State Building.</li>
+<li data-line="23" dir="auto"><a href="?query=tag:intens%C3%A3o" class="tag" target="_blank" rel="noopener">#intensão</a> <a href="?query=tag:conota%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#conotação</a> <a href="?query=tag:propriedades_comuns" class="tag" target="_blank" rel="noopener">#propriedades_comuns</a> <a href="?query=tag:termos_gen%C3%A9ricos" class="tag" target="_blank" rel="noopener">#termos_genéricos</a></li>
+</ul>
+</li>
+<li data-line="24" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Usos da Palavra “Conotação”</strong>:
+<ul>
+<li data-line="26" dir="auto"><mark>A palavra "conotação" pode se referir ao significado total de uma palavra, incluindo significados emotivos e descritivos.</mark></li>
+<li data-line="27" dir="auto">Também pode ser usada para indicar apenas o significado emotivo.</li>
+<li data-line="28" dir="auto">Por exemplo, a palavra "homem" pode ser usada para expressar uma atitude ou sentimento específico.</li>
+<li data-line="29" dir="auto"><a href="?query=tag:conota%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#conotação</a> <a href="?query=tag:significado_total" class="tag" target="_blank" rel="noopener">#significado_total</a> <a href="?query=tag:significado_emotivo" class="tag" target="_blank" rel="noopener">#significado_emotivo</a></li>
+</ul>
+</li>
+<li data-line="30" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Conotação Subjetiva, Objetiva e Convencional</strong>:
+<ul>
+<li data-line="32" dir="auto"><strong>Conotação Subjetiva</strong>: Conjunto de propriedades que uma pessoa acredita serem possuídas pelos objetos incluídos na extensão da palavra. Pode variar de uma pessoa para outra.</li>
+<li data-line="33" dir="auto"><strong>Conotação Objetiva</strong>: Conjunto total de características comuns a todos os objetos que fazem parte da extensão de um termo. Não varia de um intérprete para outro.</li>
+<li data-line="34" dir="auto"><strong>Conotação Convencional</strong>: <mark>Critério acordado publicamente para definir se um objeto faz parte da extensão de um termo.</mark> É o aspecto mais importante para fins de definição e comunicação.</li>
+<li data-line="35" dir="auto"><a href="?query=tag:conota%C3%A7%C3%A3o_subjetiva" class="tag" target="_blank" rel="noopener">#conotação_subjetiva</a> <a href="?query=tag:conota%C3%A7%C3%A3o_objetiva" class="tag" target="_blank" rel="noopener">#conotação_objetiva</a> <a href="?query=tag:conota%C3%A7%C3%A3o_convencional" class="tag" target="_blank" rel="noopener">#conotação_convencional</a></li>
+</ul>
+</li>
+<li data-line="36" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Diferença Entre Extensão e Intensão</strong>:
+<ul>
+<li data-line="38" dir="auto"><mark>A extensão de um termo é determinada pela sua intensão, mas o inverso não é verdadeiro.</mark></li>
+<li data-line="39" dir="auto"><mark>Termos diferentes podem ter a mesma extensão, mas não a mesma intensão.</mark></li>
+<li data-line="40" dir="auto"><mark>Exemplo: "triângulo equilátero" e "triângulo equiangular" têm intensões diferentes, mas a mesma extensão.</mark></li>
+<li data-line="41" dir="auto"><a href="?query=tag:diferen%C3%A7a_entre_extens%C3%A3o_e_intens%C3%A3o" class="tag" target="_blank" rel="noopener">#diferença_entre_extensão_e_intensão</a> <a href="?query=tag:termos_diferentes_mesma_extens%C3%A3o" class="tag" target="_blank" rel="noopener">#termos_diferentes_mesma_extensão</a></li>
+</ul>
+</li>
+<li data-line="42" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Lei de Variação Inversa Entre Extensão e Intensão</strong>:
+<ul>
+<li data-line="44" dir="auto"><mark>Quando termos são organizados em ordem de intensão crescente, suas respectivas extensões são ordenadas de forma decrescente.</mark></li>
+<li data-line="45" dir="auto"><mark>Exemplo: "homem", "homem vivente", "homem vivente de mais de vinte anos", "homem vivente de mais de vinte anos com cabelo ruivo".</mark></li>
+<li data-line="46" dir="auto"><mark>A lei foi revisada para acomodar casos onde a extensão de termos diferentes é a mesma.</mark></li>
+<li data-line="47" dir="auto"><a href="?query=tag:lei_de_varia%C3%A7%C3%A3o_inversa" class="tag" target="_blank" rel="noopener">#lei_de_variação_inversa</a> <a href="?query=tag:extens%C3%A3o_e_intens%C3%A3o" class="tag" target="_blank" rel="noopener">#extensão_e_intensão</a> <a href="?query=tag:termos_ordenados" class="tag" target="_blank" rel="noopener">#termos_ordenados</a></li>
+</ul>
+</li>
+<li data-line="48" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Termos com Extensão Nula ou Vazia</strong>:
+<ul>
+<li data-line="50" dir="auto"><mark>Alguns termos, como "unicorne", possuem uma extensão nula, mas não são desprovidos de significado.</mark></li>
+<li data-line="51" dir="auto">Usamos esses termos quando negamos a existência de coisas de um certo tipo, como em "Não existem unicórnios".</li>
+<li data-line="52" dir="auto"><mark>Apesar de não denotar nada, o termo "unicorne" ainda possui um significado claro.</mark></li>
+<li data-line="53" dir="auto"><a href="?query=tag:extens%C3%A3o_nula" class="tag" target="_blank" rel="noopener">#extensão_nula</a> <a href="?query=tag:termos_vazios" class="tag" target="_blank" rel="noopener">#termos_vazios</a> <a href="?query=tag:unicorne" class="tag" target="_blank" rel="noopener">#unicorne</a></li>
+</ul>
+</li>
+<li data-line="54" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Importância da Distinção Entre Intensão e Extensão</strong>:
+<ul>
+<li data-line="56" dir="auto"><mark>A distinção é importante para entender como os significados variam e como eles podem ser aplicados na lógica e na comunicação.</mark></li>
+<li data-line="57" dir="auto">As extensões podem ser fixas ou variáveis, dependendo da intensão do termo.</li>
+<li data-line="58" dir="auto"><mark>O significado intensivo ou conotativo de um termo é frequentemente mais relevante do que seu significado extensivo ou denotativo.</mark></li>
+<li data-line="59" dir="auto"><a href="?query=tag:distin%C3%A7%C3%A3o_intens%C3%A3o_extens%C3%A3o" class="tag" target="_blank" rel="noopener">#distinção_intensão_extensão</a> <a href="?query=tag:varia%C3%A7%C3%A3o_de_significados" class="tag" target="_blank" rel="noopener">#variação_de_significados</a> <a href="?query=tag:import%C3%A2ncia_da_conota%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#importância_da_conotação</a></li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Técnicas de Definição" dir="auto" class="heading" id="Técnicas_de_Definição"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Técnicas de Definição</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#definição</a> <a href="?query=tag:denota%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#denotação</a> <a href="?query=tag:conota%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#conotação</a> <a href="?query=tag:termos" class="tag" target="_blank" rel="noopener">#termos</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definições Denotativas</strong>
+  <a href="?query=tag:defini%C3%A7%C3%B5es_denotativas" class="tag" target="_blank" rel="noopener">#definições_denotativas</a> <a href="?query=tag:denota%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#denotação</a> <a href="?query=tag:extens%C3%A3o" class="tag" target="_blank" rel="noopener">#extensão</a>
+<ul>
+<li data-line="4" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Conceito de Denotação e Extensão</strong>:
+<ul>
+<li data-line="6" dir="auto"><mark>Definições denotativas baseiam-se na denotação (extensão) de um termo, ou seja, nos objetos que o termo descreve.</mark></li>
+<li data-line="7" dir="auto">A técnica mais comum é fornecer exemplos dos objetos denotados pelo termo.</li>
+</ul>
+</li>
+<li data-line="8" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Limitações das Definições Denotativas</strong>:
+<ul>
+<li data-line="10" dir="auto"><mark>Não pode ser usada para palavras sem denotação, como "unicórnio" ou "centauro".</mark></li>
+<li data-line="11" dir="auto">Dois termos com diferentes intensões (significados) podem ter a mesma extensão, o que dificulta a diferenciação através de exemplos.</li>
+</ul>
+</li>
+<li data-line="12" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Exemplo de Limitação</strong>:
+<ul>
+<li data-line="14" dir="auto">Enumerar todos os objetos que um termo denota não diferencia o termo de outros que denotam os mesmos objetos.</li>
+<li data-line="15" dir="auto">Exemplo: <mark>Os termos "homem", "animal", "marido", "mamífero", "pai" podem incluir o mesmo indivíduo (John Doe), mas têm significados diferentes.</mark></li>
+</ul>
+</li>
+<li data-line="16" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Enumeração Parcial</strong>:
+<ul>
+<li data-line="18" dir="auto">Muitas vezes, é impossível enumerar completamente todos os objetos denotados por um termo (ex: "número" ou "estrela").</li>
+<li data-line="19" dir="auto">Enumerações parciais têm limitações porque os exemplos podem pertencer a múltiplos termos.</li>
+</ul>
+</li>
+<li data-line="20" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definições por Subclasses</strong>:
+<ul>
+<li data-line="22" dir="auto">Em vez de mencionar indivíduos, menciona-se grupos inteiros de objetos que o termo denota.</li>
+<li data-line="23" dir="auto">Exemplo: Definir "metal" mencionando ouro, ferro, prata, estanho.</li>
+<li data-line="24" dir="auto">Essa técnica também possui limitações similares às definições por exemplos.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="25" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definições Ostensivas</strong>
+  <a href="?query=tag:defini%C3%A7%C3%B5es_ostensivas" class="tag" target="_blank" rel="noopener">#definições_ostensivas</a> <a href="?query=tag:demonstra%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#demonstração</a> <a href="?query=tag:gesto" class="tag" target="_blank" rel="noopener">#gesto</a> <a href="?query=tag:limita%C3%A7%C3%B5es_denota%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#limitações_denotação</a>
+<ul>
+<li data-line="29" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Conceito de Definição Ostensiva</strong>:
+<ul>
+<li data-line="31" dir="auto">Em vez de nomear ou descrever, a definição ostensiva aponta ou gesticula para exemplos.</li>
+<li data-line="32" dir="auto">Exemplo: <mark>Apontar para uma "escrivaninha" para definir o termo "escrivaninha".</mark></li>
+</ul>
+</li>
+<li data-line="33" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Limitações das Definições Ostensivas</strong>:
+<ul>
+<li data-line="35" dir="auto">Geográficas: <mark>Não é possível definir "arranha-céu" numa pequena aldeia ou "montanha" numa planície.</mark></li>
+<li data-line="36" dir="auto">Ambiguidade dos gestos: Um gesto pode apontar para o objeto, sua cor, forma, ou outros elementos próximos.</li>
+</ul>
+</li>
+<li data-line="37" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definição Quase Ostensiva</strong>:
+<ul>
+<li data-line="39" dir="auto">Combina gestos com frases descritivas para especificar melhor o objeto (ex: "A palavra 'escrivaninha' significa este artigo de mobiliário").</li>
+</ul>
+</li>
+<li data-line="40" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Importância e Uso de Definições Ostensivas</strong>:
+<ul>
+<li data-line="42" dir="auto"><mark>Utilizadas como uma forma inicial de aprendizado de linguagem, mas não são realmente "definições" formais no sentido lógico.</mark></li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="43" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definições Conotativas</strong>
+  <a href="?query=tag:defini%C3%A7%C3%B5es_conotativas" class="tag" target="_blank" rel="noopener">#definições_conotativas</a> <a href="?query=tag:conota%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#conotação</a> <a href="?query=tag:intens%C3%A3o" class="tag" target="_blank" rel="noopener">#intensão</a> <a href="?query=tag:sinon%C3%ADmia" class="tag" target="_blank" rel="noopener">#sinonímia</a>
+<ul>
+<li data-line="47" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definição Sinônima</strong>:
+<ul>
+<li data-line="49" dir="auto">Definir um termo indicando outra palavra que tem o mesmo significado (sinônimo).</li>
+<li data-line="50" dir="auto">Exemplo: Definir "adágio" como sinônimo de "provérbio".</li>
+</ul>
+</li>
+<li data-line="51" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Limitações das Definições Sinônimas</strong>:
+<ul>
+<li data-line="53" dir="auto">Nem todas as palavras têm sinônimos exatos, o que limita sua aplicabilidade.</li>
+</ul>
+</li>
+<li data-line="54" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definições Operacionais</strong>:
+  <a href="?query=tag:defini%C3%A7%C3%B5es_operacionais" class="tag" target="_blank" rel="noopener">#definições_operacionais</a> <a href="?query=tag:m%C3%A9todo_cient%C3%ADfico" class="tag" target="_blank" rel="noopener">#método_científico</a> <a href="?query=tag:teoria_da_relatividade" class="tag" target="_blank" rel="noopener">#teoria_da_relatividade</a>
+<ul>
+<li data-line="58" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Conceito e Origem</strong>:
+<ul>
+<li data-line="60" dir="auto">Definições que determinam a aplicabilidade de um termo através de operações específicas (ex: medir comprimento com uma régua).</li>
+<li data-line="61" dir="auto">Popularizadas pela teoria da relatividade de Einstein, que desafiou as noções abstratas de espaço e tempo.</li>
+</ul>
+</li>
+<li data-line="62" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Aplicação em Ciências Sociais</strong>:
+<ul>
+<li data-line="64" dir="auto"><mark>Tentativa de redefinir termos abstratos como "mente" e "sensação" de forma operacional.</mark></li>
+<li data-line="65" dir="auto"><mark>Associadas ao behaviorismo na psicologia.</mark></li>
+</ul>
+</li>
+<li data-line="66" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Críticas e Avaliações</strong>:
+<ul>
+<li data-line="68" dir="auto">Alguns cientistas argumentam que um termo é significativo somente se for suscetível a uma definição operacional.</li>
+<li data-line="69" dir="auto">Avaliação das definições operacionais está fora do escopo deste texto.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="70" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Definição por Gênero e Diferença</strong>
+  <a href="?query=tag:defini%C3%A7%C3%A3o_por_g%C3%AAnero_e_diferen%C3%A7a" class="tag" target="_blank" rel="noopener">#definição_por_gênero_e_diferença</a> <a href="?query=tag:defini%C3%A7%C3%A3o_conotativa" class="tag" target="_blank" rel="noopener">#definição_conotativa</a> <a href="?query=tag:an%C3%A1lise_de_termos" class="tag" target="_blank" rel="noopener">#análise_de_termos</a>
+<ul>
+<li data-line="74" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Descrição Geral</strong>:
+<ul>
+<li data-line="76" dir="auto">Método de definir um termo indicando seu gênero e a diferença específica que o distingue de outros termos do mesmo gênero.</li>
+<li data-line="77" dir="auto">Também conhecida como definição analítica ou definição per genus et differentia.</li>
+</ul>
+</li>
+<li data-line="78" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Importância</strong>:
+<ul>
+<li data-line="80" dir="auto">Considerada por alguns autores como a forma mais importante ou a única definição "autêntica".</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div></div></div><div class="heading-wrapper"><h3 data-heading="Regras de Definição por Gênero e Diferença" dir="auto" class="heading" id="Regras_de_Definição_por_Gênero_e_Diferença"><div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div>Regras de Definição por Gênero e Diferença</h3><div class="heading-children"><div><p dir="auto"><a href="?query=tag:defini%C3%A7%C3%A3o_por_g%C3%AAnero" class="tag" target="_blank" rel="noopener">#definição_por_gênero</a> <a href="?query=tag:regras_de_defini%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#regras_de_definição</a> <a href="?query=tag:defini%C3%A7%C3%A3o_por_diferen%C3%A7a" class="tag" target="_blank" rel="noopener">#definição_por_diferença</a></p></div><div><ul>
+<li data-line="0" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Introdução às Regras de Definição</strong><br>
+<a href="?query=tag:defini%C3%A7%C3%B5es_lexicogr%C3%A1ficas" class="tag" target="_blank" rel="noopener">#definições_lexicográficas</a> <a href="?query=tag:crit%C3%A9rios_para_avalia%C3%A7%C3%A3o" class="tag" target="_blank" rel="noopener">#critérios_para_avaliação</a>
+<ul>
+<li data-line="3" dir="auto">Existem cinco regras tradicionalmente estabelecidas para definição por gênero e diferença.</li>
+<li data-line="4" dir="auto">Essas regras são aplicáveis principalmente às definições lexicográficas e servem como critérios para avaliar as definições propostas, apesar de não fornecerem um método infalível para construir boas definições.</li>
+</ul>
+</li>
+<li data-line="5" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Regra 1: Definição Deve Indicar Atributos Essenciais</strong><br>
+<a href="?query=tag:atributos_essenciais" class="tag" target="_blank" rel="noopener">#atributos_essenciais</a> <a href="?query=tag:conota%C3%A7%C3%A3o_convencional" class="tag" target="_blank" rel="noopener">#conotação_convencional</a>
+<ul>
+<li data-line="8" dir="auto"><strong>Descrição da Regra</strong>: Uma definição deve indicar os atributos essenciais da espécie.</li>
+<li data-line="9" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Explicação do Conceito de "Atributos Essenciais"</strong>:
+<ul>
+<li data-line="10" dir="auto">O termo "atributos essenciais" refere-se à conotação convencional de um termo, ou seja, às propriedades que convencionam o uso de um termo para denotar objetos.</li>
+<li data-line="11" dir="auto">Exemplo: A palavra "círculo" deve ser definida como "uma figura plana fechada cujos pontos são todos equidistantes de um outro ponto chamado centro", e não como "encerrar uma área maior do que qualquer outra figura plana fechada de igual perímetro".</li>
+<li data-line="12" dir="auto">A conotação convencional não precisa ser intrínseca às coisas denotadas pelo termo. Pode incluir origem, relações, ou usos das coisas.</li>
+<li data-line="13" dir="auto"><mark>Exemplo: "Stradivarius" denota violinos fabricados na oficina de Antônio Stradivari, sem necessidade de uma característica física comum entre eles.</mark></li>
+<li data-line="14" dir="auto"><mark>Outro exemplo é a palavra "sapato", que deve incluir referência ao uso como revestimento para o pé, não apenas a forma ou material.</mark></li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="15" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Regra 2: Definição Não Deve Ser Circular</strong><br>
+<a href="?query=tag:defini%C3%A7%C3%A3o_circular" class="tag" target="_blank" rel="noopener">#definição_circular</a> <a href="?query=tag:defini%C3%A7%C3%A3o_por_g%C3%AAnero_e_diferen%C3%A7a" class="tag" target="_blank" rel="noopener">#definição_por_gênero_e_diferença</a>
+<ul>
+<li data-line="18" dir="auto"><strong>Descrição da Regra</strong>: Uma definição não deve ser circular, ou seja, o termo a ser definido (definiendum) não deve aparecer na definição (definiens).</li>
+<li data-line="19" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Explicação do Conceito de "Circularidade"</strong>:
+<ul>
+<li data-line="20" dir="auto">Se uma definição é circular, não explica o significado do termo para quem ainda não o conhece.</li>
+<li data-line="21" dir="auto">A regra também se aplica ao uso de sinônimos no definiens, pois, se um sinônimo é compreendido, pode-se usar uma definição sinonímica em vez de uma definição por gênero e diferença.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="22" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Regra 3: Definição Não Deve Ser Excessivamente Ampla ou Estreita</strong><br>
+<a href="?query=tag:defini%C3%A7%C3%A3o_ampla" class="tag" target="_blank" rel="noopener">#definição_ampla</a> <a href="?query=tag:defini%C3%A7%C3%A3o_estreita" class="tag" target="_blank" rel="noopener">#definição_estreita</a>
+<ul>
+<li data-line="25" dir="auto"><strong>Descrição da Regra</strong>: O definiens deve denotar exatamente as mesmas coisas que o definiendum, sem incluir ou excluir excessivamente.</li>
+<li data-line="26" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Exemplos de Definições Ampla e Estreita</strong>:
+<ul>
+<li data-line="27" dir="auto">Definição ampla: Definir "homem" como "bípede implume" é muito amplo, pois inclui outras criaturas, como um frango depenado.</li>
+<li data-line="28" dir="auto">Definição estreita: Definir "sapato" como "cobertura de couro para o pé humano" é muito estreita, pois exclui sapatos feitos de outros materiais, como madeira.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="29" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Regra 4: Definição Não Deve Ser Ambígua, Obscura ou Figurada</strong><br>
+<a href="?query=tag:linguagem_amb%C3%ADgua" class="tag" target="_blank" rel="noopener">#linguagem_ambígua</a> <a href="?query=tag:linguagem_obscura" class="tag" target="_blank" rel="noopener">#linguagem_obscura</a> <a href="?query=tag:linguagem_figurada" class="tag" target="_blank" rel="noopener">#linguagem_figurada</a>
+<ul>
+<li data-line="32" dir="auto"><strong>Descrição da Regra</strong>: Evitar linguagem ambígua, obscura ou figurada em definições.</li>
+<li data-line="33" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Explicação do Conceito de "Ambiguidade e Obscuridade"</strong>:
+<ul>
+<li data-line="34" dir="auto">Termos ambíguos tornam a definição ineficaz.</li>
+<li data-line="35" dir="auto">Termos obscuros dificultam a compreensão, especialmente se a audiência não estiver familiarizada com o jargão técnico.</li>
+<li data-line="36" dir="auto">Exemplo: Definições técnicas são adequadas para especialistas, mas obscuras para leigos.</li>
+<li data-line="37" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Uso de Linguagem Figurada ou Metafórica</strong>:
+<ul>
+<li data-line="38" dir="auto">Não é adequada para explicações claras; embora possa ser persuasiva ou humorística, não fornece um entendimento preciso.</li>
+<li data-line="39" dir="auto">Exemplo de linguagem figurada: Definir "pão" como "o sustento da vida" é figurado e não esclarece o significado da palavra.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li data-line="40" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Regra 5: ==Definição Não Deve Ser Negativa Quando Pode Ser Afirmativa</strong>==<br>
+<a href="?query=tag:defini%C3%A7%C3%A3o_negativa" class="tag" target="_blank" rel="noopener">#definição_negativa</a> <a href="?query=tag:defini%C3%A7%C3%A3o_afirmativa" class="tag" target="_blank" rel="noopener">#definição_afirmativa</a>
+<ul>
+<li data-line="43" dir="auto"><strong>Descrição da Regra</strong>: Preferir definições afirmativas a negativas.</li>
+<li data-line="44" dir="auto"><div class="list-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle"><path d="M3 8L12 17L21 8"></path></svg></div><strong>Explicação do Conceito de "Definição Negativa"</strong>:
+<ul>
+<li data-line="45" dir="auto">Definições negativas explicam o que o termo não significa, o que é geralmente menos útil, pois há muitas coisas que o termo não significa.</li>
+<li data-line="46" dir="auto">Exemplo de definição inadequada: "Divã" definido como algo que não é uma cama ou cadeira, o que é insuficiente devido à infinidade de coisas que não são cama ou cadeira.</li>
+<li data-line="47" dir="auto"><strong>Exceções à Regra</strong>: Alguns termos requerem definições negativas.</li>
+<li data-line="48" dir="auto">Exemplo: "Órfão" é uma criança sem pais vivos; "calvo" refere-se à ausência de cabelo na cabeça.</li>
+<li data-line="49" dir="auto">A definição deve, preferencialmente, mencionar o gênero e fornecer uma caracterização negativa da espécie, evitando a exclusão de um número excessivo de alternativas.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></div><div class="mod-footer"></div></div></div></div></div></div><div class="sidebar-right sidebar"><div class="sidebar-handle"></div><div class="sidebar-topbar"><div class="topbar-content"></div><div class="clickable-icon sidebar-collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 3H3C1.89543 3 1 3.89543 1 5V19C1 20.1046 1.89543 21 3 21H21C22.1046 21 23 20.1046 23 19V5C23 3.89543 22.1046 3 21 3Z"></path><path d="M10 4V20"></path><path d="M4 7H7"></path><path d="M4 10H7"></path><path d="M4 13H7"></path></svg></div></div><div class="sidebar-content"><div class="graph-view-wrapper"><div class="sidebar-section-header">Interactive Graph</div><div class="graph-view-placeholder">
+		<div class="graph-view-container">
+			<div class="graph-icon graph-expand" role="button" aria-label="Expand" data-tooltip-position="top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></div>
+			<canvas id="graph-canvas" class="hide" width="512px" height="512px"></canvas>
+		</div>
+		</div></div><div class="tree-container mod-root nav-folder tree-item outline-tree" data-depth="0"><div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button" aria-label="Collapse All"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></svg></button></div><div class="tree-scroll-area tree-item-children nav-folder-children"><div class="tree-item mod-tree-folder nav-folder mod-collapsible is-collapsed" style="display: none;"></div><div class="tree-item" data-depth="1"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#4. Definição"><div class="tree-item-contents heading-link" heading-name="
+Definição
+"><span class="tree-item-title">Definição</span></div></a><div class="tree-item-children nav-folder-children"><div class="tree-item" data-depth="4"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#I._Cinco_Propósitos_de_Definição"><div class="tree-item-contents heading-link" heading-name="I. Cinco Propósitos de Definição"><span class="tree-item-title">I. Cinco Propósitos de Definição</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Considerações_Finais"><div class="tree-item-contents heading-link" heading-name="Considerações Finais"><span class="tree-item-title">Considerações Finais</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Disputas_Verbais_e_Definição"><div class="tree-item-contents heading-link" heading-name="Disputas Verbais e Definição"><span class="tree-item-title">Disputas Verbais e Definição</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Cinco_Tipos_de_Definição"><div class="tree-item-contents heading-link" heading-name="Cinco Tipos de Definição"><span class="tree-item-title">Cinco Tipos de Definição</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Definições_Estipulativas"><div class="tree-item-contents heading-link" heading-name="Definições Estipulativas"><span class="tree-item-title">Definições Estipulativas</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Definições_Lexicográficas"><div class="tree-item-contents heading-link" heading-name="Definições Lexicográficas"><span class="tree-item-title">Definições Lexicográficas</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Definições_Aclaradoras"><div class="tree-item-contents heading-link" heading-name="Definições Aclaradoras"><span class="tree-item-title">Definições Aclaradoras</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Definições_Teóricas"><div class="tree-item-contents heading-link" heading-name="Definições Teóricas"><span class="tree-item-title">Definições Teóricas</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Definições_Persuasivas"><div class="tree-item-contents heading-link" heading-name="Definições Persuasivas"><span class="tree-item-title">Definições Persuasivas</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Relações_Entre_Propósitos_e_Tipos_de_Definições"><div class="tree-item-contents heading-link" heading-name="Relações Entre Propósitos e Tipos de Definições"><span class="tree-item-title">Relações Entre Propósitos e Tipos de Definições</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Varias_Espécies_de_Significado"><div class="tree-item-contents heading-link" heading-name="Varias Espécies de Significado"><span class="tree-item-title">Varias Espécies de Significado</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Técnicas_de_Definição"><div class="tree-item-contents heading-link" heading-name="Técnicas de Definição"><span class="tree-item-title">Técnicas de Definição</span></div></a><div class="tree-item-children nav-folder-children"></div></div><div class="tree-item" data-depth="3"><a class="tree-link" href="bibilioteca\autores\irving-m.-copi\introdução-a-lógica\4.-definição.html#Regras_de_Definição_por_Gênero_e_Diferença"><div class="tree-item-contents heading-link" heading-name="Regras de Definição por Gênero e Diferença"><span class="tree-item-title">Regras de Definição por Gênero e Diferença</span></div></a><div class="tree-item-children nav-folder-children"></div></div></div></div></div></div></div><script defer="">let rs = document.querySelector(".sidebar-right"); rs.classList.add("is-collapsed"); if (window.innerWidth > 768) rs.classList.remove("is-collapsed"); rs.style.setProperty("--sidebar-width", localStorage.getItem("sidebar-right-width"));</script></div></div></body></html>
